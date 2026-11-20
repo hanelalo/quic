@@ -1,0 +1,18 @@
+[package]
+name = "quic"
+version = "0.1.0"
+edition = "2024"
+description = "A terminal coding-agent workspace: file tree + changed files + embedded agent CLI"
+license = "MIT"
+
+[dependencies]
+anyhow = "1"
+ignore = "0.4"
+portable-pty = "0.9"
+ratatui = "0.30"
+unicode-width = "0.2"
+vt100 = "0.18"
+
+[profile.release]
+lto = true
+codegen-units = 1
